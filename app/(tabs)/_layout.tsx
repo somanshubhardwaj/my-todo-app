@@ -27,18 +27,7 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="add"
-        options={{
-          title: "Add Todo",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "list-circle" : "list-circle-outline"}
-              color={color}
-            />
-          ),
-        }}
-      />
+     
       <Tabs.Screen
         name="about"
         options={{

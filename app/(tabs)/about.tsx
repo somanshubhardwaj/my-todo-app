@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
-
+import { ExternalLink } from "@/components/ExternalLink";
 export default function AboutScreen() {
   return (
     <ParallaxScrollView
@@ -16,8 +16,25 @@ export default function AboutScreen() {
         <ThemedText type="title">About</ThemedText>
       </ThemedView>
       <ThemedText>
-        This is a simple todo app that allows you to add, delete and edit todos.
+        This is a simple todo app that allows you to add and delete todos.
+
       </ThemedText>
+      <ThemedText>
+        It is built using React Native and Expo.
+      </ThemedText>
+      <ThemedText>
+        Made with ❤️ by the SB.
+      </ThemedText>
+      <ExternalLink href="https://reactnative.dev">
+        Learn more about React Native
+      </ExternalLink>
+      <ExternalLink href="https://expo.dev">
+        Learn more about Expo
+      </ExternalLink>
+      <ExternalLink href="https://github.com/somanshubhardwaj">
+        Learn more about SB
+      </ExternalLink>
+
     </ParallaxScrollView>
   );
 }
